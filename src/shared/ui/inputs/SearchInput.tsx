@@ -6,7 +6,7 @@ type Props = {
   value: string;
   onChange: (value: string) => void;
   isActivateByClick?: boolean;
-  iconPosition: ComponentProps<typeof Input>["iconPosition"];
+  iconPosition?: ComponentProps<typeof Input>["iconPosition"];
 };
 
 export const SearchInput = ({
