@@ -1,0 +1,43 @@
+.checkbox {
+  position: relative;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+
+  & input {
+    display: none;
+  }
+  &:has(input:checked) {
+    background-color: var(--accent);
+    border: 1px solid var(--accent-hover);
+  }
+  &:has(input[data-indeterminate="true"]) {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 3px;
+      border-bottom: 2px solid var(--bg-primary);
+      border-left: unset;
+      transform: unset;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 4px;
+    border-left: 2px solid var(--bg-primary);
+    border-bottom: 2px solid var(--bg-primary);
+    transform: rotate(-45deg);
+  }
+}

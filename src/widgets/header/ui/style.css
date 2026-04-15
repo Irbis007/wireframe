@@ -1,0 +1,135 @@
+.header {
+  height: 70px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header_nav > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.header_nav > .disabled a {
+  color: var(--text-secondary);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.header_dropdown_content {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.header_dropdown_content li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header_dropdown_content li a:hover {
+  background-color: var(--bg-secondary);
+}
+.header_dropdown_content li:last-child a {
+  border-bottom: none;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header_icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_search {
+  display: flex;
+  align-items: center;
+}
+
+.header_search_active {
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+}
+
+.header_search input {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  display: none;
+}
+
+.header_search_active input {
+  display: block;
+}
+
+.header_search .search_icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_user .user_avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--icon-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header_user .user_menu {
+  width: 240px;
+}
+
+.header_user .user_menu_item {
+  font-size: 14px;
+  cursor: pointer;
+
+  padding: 8px 12px;
+  &:hover {
+    background-color: var(--bg-secondary);
+  }
+}
+
+.header_user .user_menu_border {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header_user .user_menu_profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header_user .user_menu_profile .user_name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header_user .user_menu_profile .user_link {
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: underline;
+}

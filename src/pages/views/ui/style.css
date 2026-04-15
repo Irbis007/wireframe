@@ -1,0 +1,35 @@
+.views_filters {
+  display: flex;
+}
+
+.views_list-settings_wrapper {
+  margin-top: 30px;
+}
+
+.views_list-settings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.views_filter-button {
+  width: 80px;
+  height: 40px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-right: none;
+  &:last-child {
+    border-right: 1px solid var(--border-color);
+  }
+  &:hover {
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+  }
+  &.active {
+    background-color: var(--bg-secondary);
+  }
+}
+
+.views_list {
+  margin-top: 20px;
+}

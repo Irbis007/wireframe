@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2023",
+    "useDefineForClassFields": true,
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+     "paths": {
+      "@entities": ["./src/entities/index.ts"],
+      "@features": ["./src/features/index.ts"],
+      "@pages": ["./src/pages/index.ts"],
+      "@widgets": ["./src/widgets/index.ts"],
+      "@app/*": ["./src/app/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@features/*": ["./src/features/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@shared/api": ["./src/shared/api/index.ts"],
+      "@shared/assets": ["./src/shared/assets/index.ts"],
+      "@shared/consts": ["./src/shared/consts/index.ts"],
+      "@shared/lib": ["./src/shared/lib/index.ts"],
+      "@shared/model": ["./src/shared/model/index.ts"],
+      "@shared/*": ["./src/shared/*"],
+      "@src/*": ["./src/*"]
+    }
+  // "include": [
+  //   "**/*.js",
+  //   "**/*.jsx",
+  //   "**/*.ts",
+  //   "**/*.tsx",
+  //   "**/*.mts",
+  //   "eslint.config.mjs",
+  //   "**/*.d.ts",
+  //   "**/*.css"
+  // ],
+  },
+  "include": ["src"]
+}

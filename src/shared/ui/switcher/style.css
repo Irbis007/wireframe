@@ -1,0 +1,31 @@
+.switcher {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 16px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--bg-primary);
+    transition: left .2s;
+  }
+
+  &.active {
+    background-color: var(--accent);
+    &::before {
+      left: calc(100% - 18px);
+    }
+  }
+}

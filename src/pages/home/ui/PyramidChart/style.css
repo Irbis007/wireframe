@@ -1,0 +1,31 @@
+
+.pyramid_chart {
+  max-width: 55%;
+  width: 100%;
+}
+
+.pyramid_chart-legend_list {
+  max-width: 40%;
+  width: 100%;
+}
+
+.pyramid_chart-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  width: 100%;
+  margin-top: 16px;
+}
+.pyramid_chart-legend .legend_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.pyramid_chart-legend-color {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+.page_markup {
+  padding: 20px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.page_markup-top {
+  display: flex;
+  justify-content: space-between;
+  &.without-gap {
+    justify-content: unset;
+  }
+}
+
+.page_markup-title {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.page_markup-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 400px;
+  margin-top: 12px;
+}

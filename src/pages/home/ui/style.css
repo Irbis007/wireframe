@@ -1,0 +1,138 @@
+.dashboard_charts {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard_chart-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.dashboard_chart-main_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.dashboard_chart-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dashboard_chart-summary {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-top: 12px;
+  margin-left: 15%;
+}
+
+.dashboard_chart-summary > span {
+  font-weight: 700;
+}
+
+.dashboard_chart-legend_list {
+  max-width: 50%;
+  width: 100%;
+}
+
+
+.dashboard_chart-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  width: 100%;
+  margin-top: 16px;
+}
+.dashboard_chart-legend .legend_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.dashboard_chart-legend-color {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dashboard-main_chart {
+  margin-top: 20px;
+}
+
+.main_chart-top{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.main_chart-title{
+  font-size: 20px;
+}
+
+.main_chart-labels {
+  display: flex;
+  gap: 20px;
+}
+
+.main_chart-label{
+  padding-left: 10px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    /* transform: translateY(-50%); */
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background-color: #969696;
+  }
+}
+
+.main_chart-label:nth-child(2)::before{
+  background-color: #e4e4e4
+}
+
+.dashboard_chart-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main_chart-revenue {
+  padding: 20px 64px 20px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.main_chart-revenue_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main_chart-revenue_list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & > li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    & > span:nth-child(1) {
+      opacity: .6;
+    }
+  }
+}

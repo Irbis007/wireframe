@@ -1,0 +1,30 @@
+
+
+.organizations_modes {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+
+  & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 12px;
+
+    border: none;
+    background-color: var(--bg-primary);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--bg-secondary);
+    }
+    &:first-child {
+      padding: 13px;
+      border-right: 1px solid var(--border-color);
+    }
+  }
+}
