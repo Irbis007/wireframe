@@ -22,7 +22,7 @@ export const SearchInput = ({
       onChange={onChange}
       icon={<IoSearchOutline size={23} color="var(--icon-color)" />}
       iconPosition={iconPosition}
-      style={{ minWidth: "360px" }}
+      style={{ maxWidth: "360px", width: '100%' }}
       placeholder="Search..."
       isActivateByClick={isActivateByClick}
     />

@@ -23,6 +23,7 @@ export const AppLayout = () => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
+          overflow: 'auto'
         }}
       >
         <Header />

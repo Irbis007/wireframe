@@ -66,7 +66,7 @@ export const List = <EType extends EntityType>({
   const tableRows = table.getRowModel().rows;
 
   return (
-    <div>
+    <div className="list_container">
       <table className="list">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => {
